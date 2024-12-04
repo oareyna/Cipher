@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cipher</title>
+</head>
+<body style="text-align: center; background-color: rgb(173, 134, 208);">
+    <h1>Caesar Cipher</h1>
+    <hr style="border: 5px solid black;">
+    <form id="form"z>
+        <label>Enter text:</label>
+        <input type="text" id="input" required >
+        <br><br>
+        <label>Encrypt or Decrypt?</label>
+        <select required id="eord">
+            <option value="Encrypt">Encrypt</option>
+            <option value="Decrypt">Decrypt</option>
+        </select>
+        <br><br>
+        <label>Shift by:</label>
+        <input type="number" min="0" max="25" id="shift" required>
+        <br><br>
+        <label >Direction of shift:</label>
+        <select id="direction" required>
+            <option value="Left">Left</option>
+            <option value="Right">Right</option>
+        </select>
+        <br><br>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+    <p id="p"></p>
+    <script src="decipher.js">
+ 
+    </script>
+</body>
+</html>
