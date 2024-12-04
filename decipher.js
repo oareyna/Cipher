@@ -1,20 +1,18 @@
 let form = document.getElementById("form")
- 
+//retrieving data from form 
 let submit = document.getElementById("submit")
  
  
  
 form.addEventListener("submit", function (event){
     event.preventDefault()
+    //retrieving data from form
     let shift= document.getElementById("shift").value
     let direction = document.getElementById("direction").value
     let userInput = document.getElementById("input").value
     let eord = document.getElementById("eord").value
     let output = ""
-    console.log(typeof(shift), typeof(direction), typeof(userInput), typeof(eord))
-    console.log(shift, direction, userInput, eord)
-
-
+    //iterating the user's input
     for (i of userInput){
         if (i== " "){output += i}
         else if (eord == "Encrypt"){
@@ -3107,7 +3105,7 @@ form.addEventListener("submit", function (event){
         }
     }
 }
-
+    //outputting output to the paragraph
     p=document.getElementById("p")
     p.innerHTML = output
 })
