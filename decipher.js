@@ -9,7 +9,7 @@ form.addEventListener("submit", function (event){
     //retrieving data from form
     let shift= document.getElementById("shift").value
     let direction = document.getElementById("direction").value
-    let userInput = document.getElementById("input").value
+    let userInput = (document.getElementById("input").value).toLowerCase()
     let eord = document.getElementById("eord").value
     let output = ""
     //iterating the user's input
